@@ -1,4 +1,4 @@
-# safeCampus
+## safeCampus
 This application was designed and developed in 20 hours. Therefore, it is the base functionalities to demonstrate the idea.
 
 # Overview
