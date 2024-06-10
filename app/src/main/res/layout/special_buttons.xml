@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#522D80"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        /*
+
+
+        <TextView
+            android:id="@+id/stranger"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="25dp"
+            android:text="Stranger Danger"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/stalker_button" />
+
+        <TextView
+            android:id="@+id/medical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="56dp"
+            android:text="Medical"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/stranger"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/medical_button" />
+
+        <ImageButton
+            android:id="@+id/school_shoot_button"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="109dp"
+            android:layout_height="112dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginEnd="21dp"
+            android:layout_marginBottom="21dp"
+            android:backgroundTint="#522D80"
+            android:scaleType="fitXY"
+            android:src="@mipmap/schoolshoot"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/fire_button"
+            app:layout_constraintEnd_toStartOf="@+id/textView2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@mipmap/schoolshoot"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/fire_button"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="109dp"
+            android:layout_height="103dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginEnd="94dp"
+            android:layout_marginBottom="22dp"
+            android:backgroundTint="#522D80"
+            android:scaleType="fitXY"
+            android:src="@mipmap/launcher"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/medical_button"
+            app:layout_constraintEnd_toStartOf="@+id/fire"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/school_shoot_button"
+            tools:src="@mipmap/launcher"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="129dp"
+            android:text="School Shooter"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/fire"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/school_shoot_button"
+            app:layout_constraintTop_toBottomOf="@+id/holdText" />
+
+        <TextView
+            android:id="@+id/fire"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="39dp"
+            android:layout_marginBottom="120dp"
+            android:text="Fire"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/medical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toEndOf="@+id/fire_button" />
+
+        <TextView
+            android:id="@+id/holdText"
+            style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="Hold Button To Alert"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#FFFFFF"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/MainPage" />
+
+        <TextView
+            android:id="@+id/MainPage"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:ems="10"
+            android:text="EMERGENCY"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#F8FFFFFF"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="30dp" />
+
+        <ImageButton
+            android:id="@+id/medical_button"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="114dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#522D80"
+            android:scaleType="fitXY"
+            android:src="@mipmap/medical1"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/stalker_button"
+            app:layout_constraintEnd_toStartOf="@+id/medical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fire_button"
+            tools:src="@mipmap/medical1"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/stalker_button"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="96dp"
+            android:layout_height="89dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="17dp"
+            android:backgroundTint="#522D80"
+            android:scaleType="fitXY"
+            android:src="@mipmap/stalkerpic"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stranger"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/medical_button"
+            tools:src="@mipmap/stalkerpic"
+            tools:visibility="visible" /><![CDATA[
+
+
+
+
+
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="342dp"
+        android:text="HOLD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    ]]>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
