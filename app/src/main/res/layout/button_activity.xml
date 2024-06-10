@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#522D80"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        /*
+
+
+        <ImageButton
+            android:id="@+id/school_shoot_button"
+            style="@android:style/Widget.DeviceDefault.Light.ImageButton"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:layout_marginTop="245dp"
+            android:layout_marginBottom="245dp"
+            android:backgroundTint="#522D80"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launch"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.26999998"
+            tools:src="@mipmap/ic_launch"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/holdText"
+            style="@android:style/Widget.DeviceDefault.Light.TextView.SpinnerItem"
+            android:layout_width="269dp"
+            android:layout_height="104dp"
+            android:layout_marginTop="170dp"
+            android:layout_marginBottom="100dp"
+            android:ems="10"
+            android:text="Hold Button"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textColor="#522D80"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/MainPage"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/school_shoot_button"
+            app:layout_constraintVertical_bias="0.337" />
+
+        <TextView
+            android:id="@+id/MainPage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="EMERGENCY"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display3"
+            android:textColor="#F8FFFFFF"
+            android:textStyle="bold"
+            android:visibility="visible"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/special_next_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="290dp"
+            android:layout_marginTop="71dp"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="46dp"
+            android:text="Next"
+            android:textColor="#673AB7"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/school_shoot_button" />
+
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="342dp"
+        android:text="HOLD"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
